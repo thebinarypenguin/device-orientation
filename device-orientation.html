@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Device Orientation Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/device-orientation.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <h2>Device Orientation Test Page</h2>
+      <br>
+      <p>
+        <span class="label label-info">Notice</span>
+        JavaScript events have been throttled to save on processing
+      </p>
+
+<table class="table table-bordered">
+  <tbody>
+
+    <!-- DeviceOrientation -->
+    <tr id="do-row">
+      <td>DeviceOrientation Event</td><td id="do-support"></td>
+    </tr>
+    <tr>
+      <td>alpha</td><td id="do-alpha">-</td>
+    </tr>
+    <tr>
+      <td>beta</td><td id="do-beta">-</td>
+    </tr>
+    <tr>
+      <td>gamma</td><td id="do-gamma">-</td>
+    </tr>
+    <tr>
+      <td>absolute</td><td id="do-absolute">-</td>
+    </tr>
+
+
+    <!-- MozOrientation -->
+    <tr id="mo-row">
+      <td>MozOrientation Event (obsolete) </td><td id="mo-support"></td>
+    </tr>
+    <tr>
+      <td>x</td><td id="mo-x">-</td>
+    </tr>
+    <tr>
+      <td>y</td><td id="mo-y">-</td>
+    </tr>
+    <tr>
+      <td>z</td><td id="mo-z">-</td>
+    </tr>
+
+
+    <!-- DeviceMotion -->
+    <tr id="dm-row">
+      <td>DeviceMotion Event</td><td id="dm-support"></td>
+    </tr>
+    <tr>
+      <td>acceleration.x</td><td id="dm-acceleration-x">-</td>
+    </tr>
+    <tr>
+      <td>acceleration.y</td><td id="dm-acceleration-y">-</td>
+    </tr>
+    <tr>
+      <td>acceleration.z</td><td id="dm-acceleration-z">-</td>
+    </tr>
+    <tr>
+      <td>accelerationIncludingGravity.x</td><td id="dm-acceleration-including-gravity-x">-</td>
+    </tr>
+    <tr>
+      <td>accelerationIncludingGravity.y</td><td id="dm-acceleration-including-gravity-y">-</td>
+    </tr>
+    <tr>
+      <td>accelerationIncludingGravity.z</td><td id="dm-acceleration-including-gravity-z">-</td>
+    </tr>
+    <tr>
+      <td>rotationRate.alpha</td><td id="dm-rotation-rate-alpha">-</td>
+    </tr>
+    <tr>
+      <td>rotationRate.beta</td><td id="dm-rotation-rate-beta">-</td>
+    </tr>
+    <tr>
+      <td>rotationRate.gamma</td><td id="dm-rotation-rate-gamma">-</td>
+    </tr>
+
+
+    <!-- OrientationChange -->
+    <tr id="oc-row">
+      <td>OrientationChange Event</td><td id="oc-support"></td>
+    </tr>
+    <tr>
+      <td>window.orientation</td><td id="oc-orientation">-</td>
+    </tr>
+
+
+    <!-- Window Resize -->
+    <tr id="wr-row">
+      <td>Window Resize Event</td><td id="wr-support"></td>
+    </tr>
+    <tr>
+      <td>window.innerWidth x window.innerHeight</td><td id="wr-viewport-size">- x -</td>
+    </tr>
+
+
+    <!-- Media Query -->
+    <tr id="mq-row">
+      <td>CSS3 Media Query</td>
+      <td>
+        <div id="mq-supported">Supported</div>
+        <div id="mq-not-supported">Not Supported</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Orientation</td>
+      <td>
+        <div id="mq-portrait">Portrait</div>
+        <div id="mq-landscape">Landscape</div>
+      </td>
+    </tr>
+
+    <!-- matchMedia Method -->
+    <tr id="mm-row">
+      <td>matchMedia Method</td><td id="mm-support"></td>
+    </tr>
+    <tr>
+      <td>Orientation</td><td id="mm-orientation">-</td>
+    </tr>
+
+  </tbody>
+</table>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="js/device-orientation.js"></script>
+  </body>
+</html>

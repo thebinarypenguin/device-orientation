@@ -1,0 +1,29 @@
+/* Default */
+#mq-not-supported { display:block; }
+#mq-supported { display:none; }
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+
+  #mq-row td { background-color: #DFF0D8; } /* Supported */
+
+  #mq-not-supported { display:none; }
+  #mq-supported { display:block; }
+
+  #mq-portrait  { display: block; }
+  #mq-landscape { display: none;}
+
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+
+  #mq-row td { background-color: #DFF0D8; } /* Supported */
+
+  #mq-not-supported { display:none; }
+  #mq-supported { display:block; }
+
+  #mq-portrait  { display: none; }
+  #mq-landscape { display: block;}
+
+}
